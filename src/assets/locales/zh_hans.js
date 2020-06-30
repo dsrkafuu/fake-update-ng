@@ -12,6 +12,7 @@ export default {
   // Home page
   localeLabel: '语言',
   systemLabel: '系统',
+  timerLabel: '计时器',
 
   // Systems data
   systems: [
