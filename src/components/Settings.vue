@@ -1,20 +1,30 @@
 <template>
   <div class="settings">
     <div class="locale">
-      <span class="locale-label">{{ $t('home.localeLabel') }}</span>
+      <!-- Locale label rendered from i18n -->
+      <span class="locale-label">{{ $t('localeLabel') }}</span>
       <div class="locale-input">
+        <!-- All languages select list -->
         <select v-model="locale">
-          <option value="en_us">English</option>
-          <option value="zh_hans">简体中文</option>
+          <option
+            v-for="locale of locales"
+            :key="locale.code"
+            :value="locale.code"
+          >{{ locale.lang }}</option>
         </select>
       </div>
     </div>
     <div class="system">
-      <span class="system-label">Locale</span>
+      <!-- System label rendered from i18n -->
+      <span class="system-label">{{ $t('systemLabel') }}</span>
       <div class="system-input">
+        <!-- All systems available -->
         <select v-model="system">
-          <option value="microsoft-windows-10">Windows 10</option>
-          <option value="apple-macos-catalina">macOS Catalina</option>
+          <option
+            v-for="system of $t('systems')"
+            :key="system.code"
+            :value="system.code"
+          >{{ system.name }}</option>
         </select>
       </div>
     </div>
@@ -22,17 +32,20 @@
 </template>
 
 <script>
+import locales from '@/assets/locales/index.js';
+
 export default {
   name: 'GlobalSettings',
   data() {
     return {
+      locales, // Get all data from assets
       locale: 'en_us',
       system: 'microsoft-windows-10',
     };
   },
   watch: {
     locale(val) {
-      this.$i18n.locale = val;
+      this.$i18n.locale = val; // Sync locale with selected
     },
   },
 };
