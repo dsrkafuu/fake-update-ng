@@ -1,10 +1,19 @@
 export default {
+  /** META */
+
   code: 'en_us', // Must be same as filename
   lang: 'English (United States)', // Fullname of language
 
-  // Translation part
+  /** TRANSLATION */
+
+  // Main title
+  title: 'Fake Update',
+
+  // Home page
   localeLabel: 'Locale',
   systemLabel: 'System',
+
+  // Systems data
   systems: [
     {
       code: 'microsoft-windows-10',

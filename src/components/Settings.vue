@@ -32,6 +32,7 @@
 </template>
 
 <script>
+import ls from '@/assets/packages/local_storage.js';
 import locales from '@/assets/locales/index.js';
 
 export default {
@@ -44,9 +45,20 @@ export default {
     };
   },
   watch: {
+    // Sync locale with selected
     locale(val) {
-      this.$i18n.locale = val; // Sync locale with selected
+      this.$i18n.locale = val;
+      ls.set('fake-update_locale', val);
     },
+  },
+  mounted() {
+    let lsLocale = ls.get('fake-update_locale');
+    if (lsLocale) {
+      this.$i18n.locale = lsLocale;
+      this.locale = lsLocale;
+    } else {
+      ls.set('fake-update_locale', this.locale);
+    }
   },
 };
 </script>

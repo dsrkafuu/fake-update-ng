@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <h1>Fake Update</h1>
+    <h1>{{ $t('title') }}</h1>
   </div>
 </template>
 
@@ -12,9 +12,3 @@ export default {
 
 <style lang="scss" scoped>
 </style>
-
-<i18n>
-{
-  
-}
-</i18n>
