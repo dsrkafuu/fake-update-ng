@@ -12,6 +12,7 @@ export default {
   // Home page
   localeLabel: 'Locale',
   systemLabel: 'System',
+  timerLabel: 'Timer',
 
   // Systems data
   systems: [

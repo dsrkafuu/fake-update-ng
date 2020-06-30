@@ -5,7 +5,7 @@
       <span class="locale-label">{{ $t('localeLabel') }}</span>
       <div class="locale-input">
         <!-- All languages select list -->
-        <select v-model="locale">
+        <select v-model="selectedLocale">
           <option
             v-for="locale of locales"
             :key="locale.code"
@@ -19,7 +19,7 @@
       <span class="system-label">{{ $t('systemLabel') }}</span>
       <div class="system-input">
         <!-- All systems available -->
-        <select v-model="system">
+        <select v-model="selectedSystem">
           <option
             v-for="system of $t('systems')"
             :key="system.code"
@@ -28,11 +28,15 @@
         </select>
       </div>
     </div>
+    <div class="timer">
+      <!-- Timer label rendered from i18n -->
+      <span class="timer-label">{{ $t('timerLabel') }}</span>
+      <div class="timer-input"></div>
+    </div>
   </div>
 </template>
 
 <script>
-import ls from '@/assets/packages/local_storage.js';
 import locales from '@/assets/locales/index.js';
 
 export default {
@@ -40,24 +44,21 @@ export default {
   data() {
     return {
       locales, // Get all data from assets
-      locale: 'en_us',
-      system: 'microsoft-windows-10',
+      selectedLocale: 'en_us',
+      selectedSystem: 'microsoft-windows-10',
     };
   },
   watch: {
     // Sync locale with selected
-    locale(val) {
+    selectedLocale(val) {
       this.$i18n.locale = val;
-      ls.set('fake-update_locale', val);
+      this.$store.dispatch('changeLocale', val);
     },
   },
   mounted() {
-    let lsLocale = ls.get('fake-update_locale');
-    if (lsLocale) {
-      this.$i18n.locale = lsLocale;
-      this.locale = lsLocale;
-    } else {
-      ls.set('fake-update_locale', this.locale);
+    // If has saved locale
+    if (this.$store.state.locale !== this.selectedLocale) {
+      this.selectedLocale = this.$store.state.locale;
     }
   },
 };
