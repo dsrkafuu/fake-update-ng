@@ -1,5 +1,5 @@
 <template>
-  <div id="header">
+  <div class="header">
     <h1>Fake Update</h1>
   </div>
 </template>
@@ -14,5 +14,7 @@ export default {
 </style>
 
 <i18n>
-{}
+{
+  
+}
 </i18n>
