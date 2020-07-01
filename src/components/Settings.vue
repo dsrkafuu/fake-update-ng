@@ -32,7 +32,7 @@
       <!-- Timer label rendered from i18n -->
       <span class="timer-label">{{ $t('timerLabel') }}</span>
       <div class="timer-input">
-        <input type="text" />
+        <input v-model="selectedTimer" type="number" />
       </div>
     </div>
   </div>
@@ -47,7 +47,8 @@ export default {
     return {
       locales, // Get all data from assets
       selectedLocale: 'en_us',
-      selectedSystem: 'microsoft-windows-10',
+      selectedSystem: 'windows-10',
+      selectedTimer: '30',
     };
   },
   watch: {

@@ -18,11 +18,11 @@ export default {
   // Systems data
   systems: [
     {
-      code: 'microsoft-windows-10',
+      code: 'windows-10',
       name: 'Windows 10',
     },
     {
-      code: 'apple-macos-catalina',
+      code: 'macos-catalina',
       name: 'macOS Catalina',
     },
   ],
