@@ -8,23 +8,18 @@ import _ from '@/default.js';
 
 export default new Vuex.Store({
   state: {
-    locale: ls.get('fake-update_locale') || _.locale,
-    system: ls.get('fake-update_system') || _.system,
-    timer: ls.get('fake-update_timer') || _.timer,
+    locale: ls.get('fake-update-locale') || _.locale,
+    timer: ls.get('fake-update-timer') || _.timer,
   },
   actions: {},
   mutations: {
     changeLocale(state, locale) {
       state.locale = locale;
-      ls.set('fake-update_locale', locale);
-    },
-    changeSystem(state, system) {
-      state.system = system;
-      ls.set('fake-update_system', system);
+      ls.set('fake-update-locale', locale);
     },
     changeTimer(state, timer) {
       state.timer = timer;
-      ls.set('fake-update_timer', timer);
+      ls.set('fake-update-timer', timer);
     },
   },
 });

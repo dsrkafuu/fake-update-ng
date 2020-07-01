@@ -9,12 +9,12 @@ import VueI18n from 'vue-i18n';
 // Use Vue I18n Plugin
 Vue.use(VueI18n);
 // Import locales data
-import localeIndex from '@/assets/locales/index.js';
+import homeLocale from './locales/home.js';
 // Init i18n instance
 const i18n = new VueI18n({
-  locale: 'en_us',
-  fallbackLocale: 'en_us',
-  messages: localeIndex,
+  locale: 'en-us',
+  fallbackLocale: 'en-us',
+  messages: homeLocale,
 });
 
 /** normalize.css */
