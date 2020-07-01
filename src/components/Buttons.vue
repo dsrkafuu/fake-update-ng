@@ -9,7 +9,6 @@ export default {
   name: 'HomeButtons',
   methods: {
     startUpdate() {
-      // Get what we need from store
       this.$router.push(this.$store.state.system);
     },
   },

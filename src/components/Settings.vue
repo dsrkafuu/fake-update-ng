@@ -32,7 +32,6 @@
 <script>
 import _ from '@/default.js';
 import index from '@/index.js';
-import ls from '@/assets/packages/local-storage.js';
 
 export default {
   name: 'HomeSettings',
@@ -60,7 +59,7 @@ export default {
   },
   watch: {
     system(val) {
-      ls.set('fake-update-system', val);
+      this.$store.commit('changeSystem', val);
     },
     systemLocale(val) {
       this.$store.commit('changeLocale', val);
@@ -70,9 +69,8 @@ export default {
     },
   },
   mounted() {
-    let savedSystem = ls.get('fake-update-system');
-    if (savedSystem && savedSystem !== this.system) {
-      this.system = savedSystem;
+    if (this.$store.state.system !== this.system) {
+      this.system = this.$store.state.system;
     }
     if (this.$store.state.locale !== this.systemLocale) {
       this.systemLocale = this.$store.state.locale;
