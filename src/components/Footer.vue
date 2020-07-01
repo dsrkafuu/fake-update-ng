@@ -21,6 +21,7 @@
 <script>
 import _ from '@/default.js';
 import index from '@/index.js';
+import ls from '@/assets/packages/local-storage.js';
 
 export default {
   name: 'HomeFooter',
@@ -31,11 +32,18 @@ export default {
     };
   },
   watch: {
-    // Sync data with selected
+    // Sync data with localStorage
     siteLocale(val) {
       this.$i18n.locale = val;
-      this.$store.commit('changeLocale', val);
+      ls.set('fake-update-siteLocale', val);
     },
+  },
+  mounted() {
+    // Detect saved site locale from localStorage
+    let savedSiteLocale = ls.get('fake-update-siteLocale');
+    if (savedSiteLocale !== this.siteLocale) {
+      this.siteLocale = savedSiteLocale;
+    }
   },
 };
 </script>

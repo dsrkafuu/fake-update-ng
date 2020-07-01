@@ -3,7 +3,7 @@ import Vuex from 'vuex';
 
 Vue.use(Vuex);
 
-import ls from '@/assets/packages/local_storage.js';
+import ls from '@/assets/packages/local-storage.js';
 import _ from '@/default.js';
 
 export default new Vuex.Store({
