@@ -31,7 +31,9 @@
     <div class="timer">
       <!-- Timer label rendered from i18n -->
       <span class="timer-label">{{ $t('timerLabel') }}</span>
-      <div class="timer-input"></div>
+      <div class="timer-input">
+        <input type="text" />
+      </div>
     </div>
   </div>
 </template>

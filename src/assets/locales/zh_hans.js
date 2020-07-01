@@ -13,6 +13,7 @@ export default {
   localeLabel: '语言',
   systemLabel: '系统',
   timerLabel: '计时器',
+  buttonLabel: '开始升级',
 
   // Systems data
   systems: [

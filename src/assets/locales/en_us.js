@@ -13,6 +13,7 @@ export default {
   localeLabel: 'Locale',
   systemLabel: 'System',
   timerLabel: 'Timer',
+  buttonLabel: 'Start update',
 
   // Systems data
   systems: [
