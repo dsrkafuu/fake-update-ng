@@ -9,7 +9,7 @@ import _ from '@/default.js';
 export default new Vuex.Store({
   state: {
     locale: ls.get('fake-update-locale') || _.locale,
-    timer: ls.get('fake-update-timer') || _.timer,
+    timer: Number.parseInt(ls.get('fake-update-timer')) || _.timer,
   },
   actions: {},
   mutations: {

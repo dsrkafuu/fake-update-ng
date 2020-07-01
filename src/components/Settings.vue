@@ -23,7 +23,7 @@
       <!-- Timer label rendered from i18n -->
       <span class="timer-label">{{ $t('timerLabel') }}</span>
       <div class="timer-input">
-        <input type="number" v-model="selectedTimer" />
+        <input type="number" v-model="timer" />
       </div>
     </div>
   </div>
@@ -40,7 +40,7 @@ export default {
       systems: index.systems, // Get all systems from index
       system: _.system, // Set default system
       systemLocale: _.locale, // Set default system locale
-      selectedTimer: _.timer, // Set default timer
+      timer: _.timer, // Set default timer
     };
   },
   computed: {
@@ -48,6 +48,22 @@ export default {
     systemLocales() {
       return this.systems[this.system].locales;
     },
+  },
+  watch: {
+    systemLocale() {
+      this.$store.commit('changeLocale', this.systemLocale);
+    },
+    timer() {
+      this.$store.commit('changeTimer', this.timer);
+    },
+  },
+  mounted() {
+    if (this.$store.state.locale !== this.systemLocale) {
+      this.systemLocale = this.$store.state.locale;
+    }
+    if (this.$store.state.timer !== this.timer) {
+      this.timer = this.$store.state.timer;
+    }
   },
 };
 </script>
