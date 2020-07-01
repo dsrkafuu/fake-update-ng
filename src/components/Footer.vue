@@ -41,7 +41,7 @@ export default {
   mounted() {
     // Detect saved site locale from localStorage
     let savedSiteLocale = ls.get('fake-update-siteLocale');
-    if (savedSiteLocale !== this.siteLocale) {
+    if (savedSiteLocale && savedSiteLocale !== this.siteLocale) {
       this.siteLocale = savedSiteLocale;
     }
   },
