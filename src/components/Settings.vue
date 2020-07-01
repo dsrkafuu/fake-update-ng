@@ -14,7 +14,7 @@
       <!-- Locale label rendered from i18n -->
       <span class="locale-label">{{ $t('localeLabel') }}</span>
       <div class="locale-input">
-        <select v-model="systemLocale">
+        <select v-model="systemLocale" :disabled="localeDisabled">
           <option v-for="(value, key) of systemLocales" :key="key" :value="key">{{ value.lang }}</option>
         </select>
       </div>
@@ -48,6 +48,14 @@ export default {
     // Get all system locales from index, sync with selected system
     systemLocales() {
       return this.systems[this.system].locales;
+    },
+    // Disable local selection when this system has no text
+    localeDisabled() {
+      if (Object.keys(this.systemLocales).length === 0) {
+        return true;
+      } else {
+        return false;
+      }
     },
   },
   watch: {
