@@ -21,7 +21,7 @@ export default {
       name: 'Windows 10',
       strings: {
         nowWorking: '正在配置更新',
-        progress: '已完成',
+        progressInfo: '已完成 {progress}%',
         doNotTurnOff: '请不要关闭你的计算机',
       },
     },

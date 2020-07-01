@@ -20,9 +20,9 @@ export default {
     'windows-10': {
       name: 'Windows 10',
       strings: {
-        nowWorking: '正在配置更新',
-        progress: '已完成',
-        doNotTurnOff: '请不要关闭你的计算机',
+        nowWorking: 'Working on updates',
+        progressInfo: '{progress}% compelete',
+        doNotTurnOff: "Don't turn off your computer",
       },
     },
     'macos-catalina': {
