@@ -1,4 +1,8 @@
-# fake-update
+# fake-update-ng
+
+fake-update-ng is new experimental open source project built with Vue.js.
+
+It's basically the same concept as [Fake Update](https://fakeupdate.net/), but has a more detailed design with extensible multilingual and theme support.
 
 ## Development setup
 
