@@ -4,7 +4,7 @@ export default {
       localStorage.setItem(key, value);
       return key;
     } catch (e) {
-      console.error('Failed to set local storage');
+      console.warn('Failed to set local storage, page may not work properly');
       return undefined;
     }
   },
@@ -12,7 +12,7 @@ export default {
     try {
       return localStorage.getItem(key);
     } catch (e) {
-      console.error('Failed to get local storage');
+      console.warn('Failed to get local storage, page may not work properly');
       return undefined;
     }
   },
