@@ -1,8 +1,10 @@
+/** Vue.js */
 import Vue from 'vue';
 import router from './router';
 import store from './store';
 Vue.config.productionTip = false;
 
+/** Vue I18n */
 import VueI18n from 'vue-i18n';
 // Use Vue I18n Plugin
 Vue.use(VueI18n);
@@ -15,6 +17,10 @@ const i18n = new VueI18n({
   messages: localeIndex,
 });
 
+/** normalize.css */
+import 'normalize.css';
+
+/** Project entry */
 import App from './App.vue';
 
 new Vue({
