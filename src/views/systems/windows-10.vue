@@ -56,6 +56,7 @@ export default {
 
 <style lang="scss" scoped>
 .windows-10 {
+  cursor: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7), auto;
   position: fixed;
   top: 0;
   right: 0;

@@ -53,6 +53,7 @@ export default {
 
 <style lang="scss" scoped>
 .macos-catalina {
+  cursor: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7), auto;
   background-color: #000000;
   position: fixed;
   top: 0;
