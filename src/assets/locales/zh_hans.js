@@ -16,14 +16,18 @@ export default {
   buttonLabel: '开始升级',
 
   // Systems data
-  systems: [
-    {
-      code: 'windows-10',
+  systems: {
+    'windows-10': {
       name: 'Windows 10',
+      strings: {
+        nowWorking: '正在配置更新',
+        progress: '已完成',
+        doNotTurnOff: '请不要关闭你的计算机',
+      },
     },
-    {
-      code: 'macos-catalina',
+    'macos-catalina': {
       name: 'macOS Catalina',
+      strings: {},
     },
-  ],
+  },
 };

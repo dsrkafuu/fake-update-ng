@@ -20,11 +20,7 @@
       <div class="system-input">
         <!-- All systems available -->
         <select v-model="selectedSystem">
-          <option
-            v-for="system of $t('systems')"
-            :key="system.code"
-            :value="system.code"
-          >{{ system.name }}</option>
+          <option v-for="(system, key) of $t('systems')" :key="key" :value="key">{{ system.name }}</option>
         </select>
       </div>
     </div>
