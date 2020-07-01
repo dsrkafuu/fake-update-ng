@@ -10,6 +10,7 @@ export default new Vuex.Store({
   state: {
     locale: ls.get('fake-update_locale') || _.locale,
     system: ls.get('fake-update_system') || _.system,
+    timer: ls.get('fake-update_timer') || _.timer,
   },
   actions: {},
   mutations: {
@@ -20,6 +21,10 @@ export default new Vuex.Store({
     changeSystem(state, system) {
       state.system = system;
       ls.set('fake-update_system', system);
+    },
+    changeTimer(state, timer) {
+      state.timer = timer;
+      ls.set('fake-update_timer', timer);
     },
   },
 });

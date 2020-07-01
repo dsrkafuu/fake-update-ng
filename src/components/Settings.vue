@@ -61,6 +61,9 @@ export default {
     selectedSystem(val) {
       this.$store.commit('changeSystem', val);
     },
+    selectedTimer(val) {
+      this.$store.commit('changeTimer', val);
+    },
   },
   mounted() {
     // If Vuex get the saved data which is diff from default
@@ -71,6 +74,10 @@ export default {
     if (this.$store.state.system !== this.selectedSystem) {
       this.selectedSystem = this.$store.state.system; // Change the system to saved
       console.warn('Auto changed the system to ' + this.$store.state.system);
+    }
+    if (this.$store.state.timer !== this.selectedTimer) {
+      this.selectedTimer = this.$store.state.timer; // Change the system to saved
+      console.warn('Auto changed the timer to ' + this.$store.state.timer);
     }
   },
 };
