@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'GlobalButtons',
+  name: 'HomeButtons',
   methods: {
     startUpdate() {
       // Get what we need from store

@@ -1,22 +1,25 @@
 <template>
   <div class="home">
-    <global-header></global-header>
-    <global-settings></global-settings>
-    <global-buttons></global-buttons>
+    <home-header></home-header>
+    <home-settings></home-settings>
+    <home-buttons></home-buttons>
+    <home-footer></home-footer>
   </div>
 </template>
 
 <script>
-import GlobalHeader from '@/components/Header.vue';
-import GlobalSettings from '@/components/Settings.vue';
-import GlobalButtons from '@/components/Buttons.vue';
+import HomeHeader from '@/components/Header.vue';
+import HomeSettings from '@/components/Settings.vue';
+import HomeButtons from '@/components/Buttons.vue';
+import HomeFooter from '@/components/Footer.vue';
 
 export default {
   name: 'Home',
   components: {
-    GlobalHeader,
-    GlobalSettings,
-    GlobalButtons,
+    HomeHeader,
+    HomeSettings,
+    HomeButtons,
+    HomeFooter,
   },
 };
 </script>

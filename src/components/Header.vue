@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'GlobalHeader',
+  name: 'HomeHeader',
 };
 </script>
 
