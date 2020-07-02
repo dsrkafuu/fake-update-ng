@@ -5,14 +5,11 @@ $breakpoint-sm: 600px;
 
 $border-radius: 3px;
 
-@mixin color {
-  --color-mode: 'light';
-  --color-bg: #ecf0f5;
-  --color-card: #fffffd;
-  --color-font: #37475b;
-  --color-mute: #9ea1a3;
-  --color-hover: #eceef2;
-  --color-fuji: #8aa2d3;
-  --color-fuji-sub: #8f82bc;
-  --shadow: 0 0.25rem 1.25rem rgba(50, 50, 50, 0.075);
-}
+$color-bg: #ecf0f5;
+$color-card: #fffffd;
+$color-font: #37475b;
+$color-mute: #9ea1a3;
+$color-hover: #eceef2;
+$color-fuji: #8aa2d3;
+$color-fuji-sub: #8f82bc;
+$shadow: 0 0.25rem 1.25rem rgba(50, 50, 50, 0.075);

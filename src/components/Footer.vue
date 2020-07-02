@@ -1,63 +1,16 @@
 <template>
   <div class="footer">
-    <div class="site-locale">
-      <!-- Locale label rendered from i18n -->
-      <span class="site-locale-label">站点语言</span>
-      <div class="site-locale-input">
-        <!-- All languages select list -->
-        <el-select v-model="siteLocale">
-          <el-option
-            v-for="(data, locale) in siteLocales"
-            :key="locale"
-            :label="data.lang"
-            :value="locale"
-          ></el-option>
-        </el-select>
-      </div>
-    </div>
+    <el-button type="primary" plain>{{ $t('gitHub') }}</el-button>
+    <el-button type="primary" plain>{{ $t('about') }}</el-button>
   </div>
 </template>
 
 <script>
-import _ from '@/default.js';
-import index from '@/index.js';
-import ls from '@/assets/packages/local-storage.js';
-
 export default {
   name: 'HomeFooter',
-  data() {
-    return {
-      siteLocales: index.locales, // Get all site locales from index
-      siteLocale: _.locale, // Set default site locale
-    };
-  },
-  watch: {
-    // Sync data with localStorage
-    siteLocale(val) {
-      this.$i18n.locale = val;
-      ls.set('fake-update-siteLocale', val);
-    },
-  },
-  mounted() {
-    // Detect saved site locale from localStorage
-    let savedSiteLocale = ls.get('fake-update-siteLocale');
-    if (savedSiteLocale && savedSiteLocale !== this.siteLocale) {
-      this.siteLocale = savedSiteLocale;
-    }
-  },
 };
 </script>
 
 <style lang="scss" scoped>
-.footer {
-  text-align: center;
-}
-
-.site-locale-label {
-  display: block;
-}
-
-.site-locale-input {
-  flex: 1 1 auto;
-}
+@import '@/assets/scss/variable.scss';
 </style>

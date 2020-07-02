@@ -21,7 +21,9 @@ export default {
   },
   data() {
     return {
+      // Timer
       timer: _.timer,
+      // Progress
       progress: {
         width: '0',
         transition: 'none',
@@ -29,24 +31,19 @@ export default {
       progressInterval: undefined,
     };
   },
-  methods: {
-    updateProgress(animationTime) {
-      // Add transition CSS according to timer
-      this.progress.transition = `width ${animationTime}ms ease`;
-      // Delay the change of width after 4ms (DOM_MIN_TIMEOUT_VALUE)
-      // To prevent CSS transition not work properly
-      setTimeout(() => {
-        this.progress.width = '100%';
-      }, 4);
-    },
-  },
   mounted() {
     // Load timer from store
     if (this.$store.state.timer !== this.timer) {
       this.timer = this.$store.state.timer;
     }
     const animationTime = this.timer * 60 * 1000; // Animation time (ms)
-    this.updateProgress(animationTime);
+    // Add transition CSS according to timer
+    this.progress.transition = `width ${animationTime}ms ease`;
+    // Delay the change of width after 4ms (DOM_MIN_TIMEOUT_VALUE)
+    // To prevent CSS transition not work properly
+    setTimeout(() => {
+      this.progress.width = '100%';
+    }, 4);
   },
 };
 </script>

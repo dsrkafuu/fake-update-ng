@@ -11,6 +11,11 @@
           <home-footer></home-footer>
         </div>
       </div>
+      <div class="card">
+        <div class="card-content">
+          <home-locale></home-locale>
+        </div>
+      </div>
     </div>
     <div class="column">
       <div class="card">
@@ -28,6 +33,7 @@ import HomeHeader from '@/components/Header.vue';
 import HomeSettings from '@/components/Settings.vue';
 import HomeButtons from '@/components/Buttons.vue';
 import HomeFooter from '@/components/Footer.vue';
+import HomeLocale from '@/components/Locale.vue';
 
 export default {
   name: 'Home',
@@ -36,6 +42,7 @@ export default {
     HomeSettings,
     HomeButtons,
     HomeFooter,
+    HomeLocale,
   },
 };
 </script>
@@ -82,7 +89,7 @@ export default {
   }
 
   .card {
-    box-shadow: var(--shadow);
+    box-shadow: $shadow;
     margin-bottom: 1.5rem;
   }
 
@@ -90,7 +97,7 @@ export default {
     padding: 1.5rem;
 
     border-radius: $border-radius;
-    background-color: var(--color-card);
+    background-color: $color-card;
   }
 }
 </style>

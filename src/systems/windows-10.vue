@@ -19,17 +19,24 @@
 </template>
 
 <script>
+import _ from '@/default.js';
+
 export default {
   name: 'windows-10',
   data() {
     return {
-      locale: this.$store.state.locale,
+      // Timer
+      timer: this.$store.state.timer || _.timer,
+      // Locales
+      locale: this.$store.state.locale || _.locale,
       locales: require('@/locales/windows-10.json'),
+      // Progress
       progress: 0, // Must be (Int)
       progressInterval: undefined,
     };
   },
   computed: {
+    // Text
     nowWorking() {
       return this.locales[this.locale].nowWorking;
     },
@@ -42,10 +49,6 @@ export default {
     },
   },
   mounted() {
-    // Load timer from store
-    if (this.$store.state.timer !== this.timer) {
-      this.timer = this.$store.state.timer;
-    }
     const fullTime = this.timer * 60 * 1000; // Time in ms
     const interval = 500; // Check interval (ms)
     let timePassed = 0;

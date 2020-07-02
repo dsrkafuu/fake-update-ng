@@ -5,22 +5,18 @@
 </template>
 
 <style lang="scss">
-* {
-  box-sizing: border-box;
-}
-
 @import '@/assets/scss/variable.scss';
 
-#app {
-  @include color();
+* {
+  box-sizing: border-box;
 }
 
 html,
 body,
 #app {
   font-size: $font-size;
-  background-color: var(--color-bg);
-  color: var(--color-font);
+  background-color: $color-bg;
+  color: $color-font;
   position: absolute;
   top: 0;
   bottom: 0;

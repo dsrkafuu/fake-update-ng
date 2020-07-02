@@ -7,6 +7,8 @@ export default {
     systemLabel: 'System',
     timerLabel: 'Timer',
     buttonLabel: 'Start update',
+    gitHub: 'GitHub',
+    about: 'About',
   },
   'zh-hans': {
     lang: '简体中文',
@@ -16,6 +18,8 @@ export default {
     systemLabel: '系统',
     timerLabel: '计时器',
     buttonLabel: '开始更新',
+    gitHub: 'GitHub',
+    about: '关于',
   },
   'zh-hant': {
     lang: '繁体中文',
@@ -25,5 +29,7 @@ export default {
     systemLabel: '系統',
     timerLabel: '計時器',
     buttonLabel: '開始更新',
+    gitHub: 'GitHub',
+    about: '关于',
   },
 };
