@@ -1,0 +1,30 @@
+$font-size: 16px;
+
+$breakpoint-md: 900px;
+$breakpoint-sm: 600px;
+
+$border-radius: 3px;
+
+@mixin light {
+  --color-mode: 'light';
+  --color-bg: #ecf0f5;
+  --color-card: #fffffd;
+  --color-font: #37475b;
+  --color-mute: #9ea1a3;
+  --color-hover: #eceef2;
+  --color-link: #8aa2d3;
+  --color-link-focus: #8f82bc;
+  --shadow: 0 0.25rem 1.2rem rgba(48, 55, 66, 0.06);
+}
+
+@mixin dark {
+  --color-mode: 'light';
+  --color-bg: #2f3136;
+  --color-card: #4d5158;
+  --color-font: rgba(255, 255, 255, 0.75);
+  --color-mute: #9ea1a3;
+  --color-hover: #41454b;
+  --color-link: #8aa2d3;
+  --color-link-focus: #bab1df;
+  --shadow: 0 0.25rem 1.2rem rgba(48, 55, 66, 0.06);
+}
