@@ -1,6 +1,6 @@
 # Fake Update NG
 
-![](https://img.shields.io/github/last-commit/amzrk2/fake-update-ng?style=flat-square) ![](https://img.shields.io/github/languages/top/amzrk2/fake-update-ng?style=flat-square) ![](https://img.shields.io/github/license/amzrk2/fake-update-ng?style=flat-square)
+![](https://img.shields.io/github/workflow/status/amzrk2/fake-update-ng/build?style=flat-square) ![](https://img.shields.io/github/languages/top/amzrk2/fake-update-ng?style=flat-square) ![](https://img.shields.io/github/license/amzrk2/fake-update-ng?style=flat-square)
 
 Fake Update NG is an experimental open source project built with Vue.js.
 

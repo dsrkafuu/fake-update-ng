@@ -51,7 +51,13 @@ export default {
   computed: {
     // Get all system locales from index, sync with selected system
     systemLocales() {
-      return this.systems[this.system].locales;
+      try {
+        return this.systems[this.system].locales;
+      } catch (e) {
+        // Prevent wrong data from localStorage
+        // which make this undefined
+        return this.systems[_.system].locales;
+      }
     },
     // Disable local selection when this system has no text
     localeDisabled() {
