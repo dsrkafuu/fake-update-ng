@@ -1,3 +1,5 @@
+<i18n src="@/locales/windows-10.json"></i18n>
+
 <template>
   <div class="windows-10">
     <div class="progress">
@@ -23,15 +25,15 @@ export default {
   name: 'windows-10',
   data() {
     return {
-      nowWorking: this.$t('systems["windows-10"].strings.nowWorking'),
-      doNotTurnOff: this.$t('systems["windows-10"].strings.doNotTurnOff'),
+      nowWorking: this.$t('nowWorking'),
+      doNotTurnOff: this.$t('doNotTurnOff'),
       progress: 0, // Must be (Int)
       progressInterval: undefined,
     };
   },
   computed: {
     progressInfo() {
-      return this.$t('systems["windows-10"].strings.progressInfo', { progress: this.progress }); // Named formatting
+      return this.$t('progressInfo', { progress: this.progress }); // Named formatting
     },
   },
   mounted() {
