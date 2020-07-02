@@ -110,19 +110,19 @@ export default {
     }
 
     &:nth-child(2) {
-      animation-delay: 220ms;
+      animation-delay: 200ms;
     }
     &:nth-child(3) {
-      animation-delay: 440ms;
+      animation-delay: 400ms;
     }
     &:nth-child(4) {
-      animation-delay: 660ms;
+      animation-delay: 600ms;
     }
     &:nth-child(5) {
-      animation-delay: 880ms;
+      animation-delay: 800ms;
     }
     &:last-child {
-      animation-delay: 1100ms;
+      animation-delay: 1000ms;
     }
   }
 }
@@ -144,7 +144,7 @@ export default {
   }
   // Round 1 accelerate
   29% {
-    transform: rotate(425deg);
+    transform: rotate(415deg);
     animation-timing-function: ease-in-out;
     opacity: 1;
   }
@@ -156,7 +156,7 @@ export default {
   }
   // Round 2 accelerate
   63% {
-    transform: rotate(785deg);
+    transform: rotate(775deg);
     animation-timing-function: ease-in;
     opacity: 1;
   }
