@@ -10,7 +10,7 @@ Note that since this project was created **with the intention of learning Vue**,
 
 ## Project home page
 
-[fake-update-ng.vercel.app](https://fake-update-ng.vercel.app/)
+[fake-update.amzrk2.cc](https://fake-update.amzrk2.cc/)
 
 ## Screenshots
 
