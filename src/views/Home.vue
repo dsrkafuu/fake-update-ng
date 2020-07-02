@@ -51,7 +51,6 @@ export default {
   }
   width: 100%;
   max-width: $breakpoint-md;
-  min-height: 100%;
   margin: 0 auto;
 
   .column {

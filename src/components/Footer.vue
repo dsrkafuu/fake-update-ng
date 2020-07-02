@@ -1,6 +1,5 @@
 <template>
   <div class="footer">
-    footer
     <div class="site-locale">
       <!-- Locale label rendered from i18n -->
       <span class="site-locale-label">站点语言</span>
@@ -49,4 +48,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.footer {
+  text-align: center;
+}
+
+.site-locale-label {
+  display: block;
+}
+
+.site-locale-input {
+  flex: 1 1 auto;
+}
 </style>

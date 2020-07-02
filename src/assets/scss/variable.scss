@@ -12,9 +12,9 @@ $border-radius: 3px;
   --color-font: #37475b;
   --color-mute: #9ea1a3;
   --color-hover: #eceef2;
-  --color-link: #8aa2d3;
-  --color-link-focus: #8f82bc;
-  --shadow: 0 0.25rem 1.2rem rgba(48, 55, 66, 0.06);
+  --color-fuji: #8aa2d3;
+  --color-fuji-sub: #8f82bc;
+  --shadow: 0 0.25rem 1.25rem rgba(50, 50, 50, 0.075);
 }
 
 @mixin dark {
@@ -24,7 +24,7 @@ $border-radius: 3px;
   --color-font: rgba(255, 255, 255, 0.75);
   --color-mute: #9ea1a3;
   --color-hover: #41454b;
-  --color-link: #8aa2d3;
-  --color-link-focus: #bab1df;
-  --shadow: 0 0.25rem 1.2rem rgba(48, 55, 66, 0.06);
+  --color-fuji: #8aa2d3;
+  --color-fuji-sub: #bab1df;
+  --shadow: 0 0.25rem 1.25rem rgba(50, 50, 50, 0.075);
 }

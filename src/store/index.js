@@ -15,7 +15,7 @@ export default new Vuex.Store({
   actions: {},
   mutations: {
     changeSystem(state, system) {
-      state.locale = system;
+      state.system = system;
       ls.set('fake-update-system', system);
     },
     changeLocale(state, locale) {
