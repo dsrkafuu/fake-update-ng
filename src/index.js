@@ -11,5 +11,13 @@ export default {
       name: 'macOS',
       locales: require('./locales/macos.json'),
     },
+    ios: {
+      name: 'iOS',
+      locales: require('./locales/ios.json'),
+    },
+    'ios-white': {
+      name: 'iOS (White)',
+      locales: require('./locales/ios-white.json'),
+    },
   },
 };
