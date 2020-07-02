@@ -8,7 +8,7 @@
       </div>
       <div class="card">
         <div class="card-content">
-          <home-about></home-about>
+          <home-info></home-info>
         </div>
       </div>
       <div class="card">
@@ -37,7 +37,7 @@
 import HomeHeader from '@/components/Header.vue';
 import HomeSettings from '@/components/Settings.vue';
 import HomeButtons from '@/components/Buttons.vue';
-import HomeAbout from '@/components/About.vue';
+import HomeInfo from '@/components/Info.vue';
 import HomeLocale from '@/components/Locale.vue';
 import HomeShare from '@/components/Share.vue';
 
@@ -47,7 +47,7 @@ export default {
     HomeHeader,
     HomeSettings,
     HomeButtons,
-    HomeAbout,
+    HomeInfo,
     HomeLocale,
     HomeShare,
   },

@@ -1,10 +1,14 @@
 <template>
-  <div class="about">
+  <div class="info">
     <div class="btn">
-      <el-button type="primary" plain>{{ $t('gitHub') }}</el-button>
+      <a href="https://github.com/amzrk2/fake-update-ng" target="_blank">
+        <el-button type="primary" plain>{{ $t('gitHub') }}</el-button>
+      </a>
     </div>
     <div class="btn">
-      <el-button type="primary" plain>{{ $t('about') }}</el-button>
+      <router-link to="/about">
+        <el-button type="primary" plain>{{ $t('about') }}</el-button>
+      </router-link>
     </div>
     <div class="copy">
       <span>&copy; 2020 DSRKafuU</span>
@@ -14,7 +18,7 @@
 
 <script>
 export default {
-  name: 'HomeAbout',
+  name: 'HomeInfo',
 };
 </script>
 
