@@ -1,5 +1,3 @@
-<i18n src="@/locales/windows-10.json"></i18n>
-
 <template>
   <div class="windows-10">
     <div class="progress">
@@ -25,15 +23,22 @@ export default {
   name: 'windows-10',
   data() {
     return {
-      nowWorking: this.$t('nowWorking'),
-      doNotTurnOff: this.$t('doNotTurnOff'),
+      locale: this.$store.state.locale,
+      locales: require('@/locales/windows-10.json'),
       progress: 0, // Must be (Int)
       progressInterval: undefined,
     };
   },
   computed: {
+    nowWorking() {
+      return this.locales[this.locale].nowWorking;
+    },
+    doNotTurnOff() {
+      return this.locales[this.locale].doNotTurnOff;
+    },
     progressInfo() {
-      return this.$t('progressInfo', { progress: this.progress }); // Named formatting
+      let info = this.locales[this.locale].progressInfo;
+      return info.replace(/{progress}/g, this.progress);
     },
   },
   mounted() {

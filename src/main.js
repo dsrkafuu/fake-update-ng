@@ -20,6 +20,15 @@ const i18n = new VueI18n({
 /** normalize.css */
 import 'normalize.css';
 
+/** Element */
+import { Select, Option, Slider, Button } from 'element-ui';
+import './assets/scss/element-variable.scss';
+
+Vue.use(Select);
+Vue.use(Option);
+Vue.use(Slider);
+Vue.use(Button);
+
 /** Project entry */
 import App from './App.vue';
 

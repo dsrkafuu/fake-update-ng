@@ -1,6 +1,6 @@
 <template>
   <div class="buttons">
-    <button @click="startUpdate">{{ $t('buttonLabel') }}</button>
+    <el-button type="primary" plain @click="startUpdate">{{ $t('buttonLabel') }}</el-button>
   </div>
 </template>
 

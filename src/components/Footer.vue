@@ -5,13 +5,14 @@
       <span class="site-locale-label">站点语言</span>
       <div class="site-locale-input">
         <!-- All languages select list -->
-        <select v-model="siteLocale">
-          <option
-            v-for="(data, locale) of siteLocales"
+        <el-select v-model="siteLocale">
+          <el-option
+            v-for="(data, locale) in siteLocales"
             :key="locale"
+            :label="data.lang"
             :value="locale"
-          >{{ data.lang }}</option>
-        </select>
+          ></el-option>
+        </el-select>
       </div>
     </div>
   </div>

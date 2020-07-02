@@ -1,7 +1,6 @@
 <template>
   <div class="header">
     <h1>{{ $t('title') }}</h1>
-    <element-select></element-select>
   </div>
 </template>
 

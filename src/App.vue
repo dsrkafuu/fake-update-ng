@@ -1,5 +1,5 @@
 <template>
-  <div id="app" data-theme="light">
+  <div id="app">
     <router-view />
   </div>
 </template>
@@ -11,20 +11,8 @@
 
 @import '@/assets/scss/variable.scss';
 
-#app[data-theme='auto'] {
-  @include light();
-
-  @media (prefers-color-scheme: dark) {
-    @include dark();
-  }
-}
-
-#app[data-theme='light'] {
-  @include light();
-}
-
-#app[data-theme='dark'] {
-  @include dark();
+#app {
+  @include color();
 }
 
 html,

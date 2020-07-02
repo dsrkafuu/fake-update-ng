@@ -5,7 +5,7 @@ $breakpoint-sm: 600px;
 
 $border-radius: 3px;
 
-@mixin light {
+@mixin color {
   --color-mode: 'light';
   --color-bg: #ecf0f5;
   --color-card: #fffffd;
@@ -14,17 +14,5 @@ $border-radius: 3px;
   --color-hover: #eceef2;
   --color-fuji: #8aa2d3;
   --color-fuji-sub: #8f82bc;
-  --shadow: 0 0.25rem 1.25rem rgba(50, 50, 50, 0.075);
-}
-
-@mixin dark {
-  --color-mode: 'light';
-  --color-bg: #2f3136;
-  --color-card: #4d5158;
-  --color-font: rgba(255, 255, 255, 0.75);
-  --color-mute: #9ea1a3;
-  --color-hover: #41454b;
-  --color-fuji: #8aa2d3;
-  --color-fuji-sub: #bab1df;
   --shadow: 0 0.25rem 1.25rem rgba(50, 50, 50, 0.075);
 }

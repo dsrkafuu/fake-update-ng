@@ -5,25 +5,30 @@
       <span class="system-label">{{ $t('systemLabel') }}</span>
       <div class="system-input">
         <!-- All systems available -->
-        <select v-model="system">
-          <option v-for="(value, key) of systems" :key="key" :value="key">{{ value.name }}</option>
-        </select>
+        <el-select v-model="system">
+          <el-option v-for="(value, key) of systems" :key="key" :label="value.name" :value="key"></el-option>
+        </el-select>
       </div>
     </div>
     <div class="locale">
       <!-- Locale label rendered from i18n -->
       <span class="locale-label">{{ $t('localeLabel') }}</span>
       <div class="locale-input">
-        <select v-model="systemLocale" :disabled="localeDisabled">
-          <option v-for="(value, key) of systemLocales" :key="key" :value="key">{{ value.lang }}</option>
-        </select>
+        <el-select v-model="systemLocale" :disabled="localeDisabled">
+          <el-option
+            v-for="(value, key) of systemLocales"
+            :key="key"
+            :label="value.lang"
+            :value="key"
+          ></el-option>
+        </el-select>
       </div>
     </div>
     <div class="timer">
       <!-- Timer label rendered from i18n -->
       <span class="timer-label">{{ $t('timerLabel') }}</span>
       <div class="timer-input">
-        <input type="number" v-model="timer" />
+        <el-slider v-model="timer" show-input :min="1" :max="120"></el-slider>
       </div>
     </div>
   </div>
