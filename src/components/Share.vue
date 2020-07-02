@@ -1,8 +1,8 @@
 <template>
   <div class="share">
-    <el-divider class="share-label" content-position="left">Share</el-divider>
+    <el-divider class="share-label" content-position="left">{{ $t('share') }}</el-divider>
     <div class="list">
-      <el-button type="primary" plain @click="copyLink" size="small">Copy link</el-button>
+      <el-button type="primary" plain @click="copyLink" size="small">{{ $t('copyLink') }}</el-button>
       <el-button type="primary" plain @click="twitter" size="small">Twitter</el-button>
       <el-button type="primary" plain @click="facebook" size="small">Facebook</el-button>
     </div>

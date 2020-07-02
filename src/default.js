@@ -1,5 +1,5 @@
 export default {
-  locale: 'en-us',
+  locale: 'en',
   system: 'windows-10',
   timer: 5,
 };

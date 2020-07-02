@@ -12,8 +12,8 @@ Vue.use(VueI18n);
 import homeLocale from './locales/home.js';
 // Init i18n instance
 const i18n = new VueI18n({
-  locale: 'en-us',
-  fallbackLocale: 'en-us',
+  locale: 'en',
+  fallbackLocale: 'en',
   messages: homeLocale,
 });
 
