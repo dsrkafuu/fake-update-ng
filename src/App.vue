@@ -15,6 +15,7 @@ html,
 body,
 #app {
   font-size: $font-size;
+  font-family: $font-family;
   background-color: $color-bg;
   color: $color-font;
   position: absolute;
