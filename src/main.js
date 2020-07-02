@@ -20,7 +20,7 @@ const i18n = new VueI18n({
 /** normalize.css */
 import 'normalize.css';
 
-/** Element */
+/** Element UI */
 import { Select, Option, Slider, Button, Divider } from 'element-ui';
 import './assets/scss/element-variable.scss';
 Vue.use(Select);
