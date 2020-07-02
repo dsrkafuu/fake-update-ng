@@ -17,7 +17,7 @@ export default {
   text-align: center;
 
   h1 {
-    font-size: calc(#{$font-size} * 1.5);
+    font-size: calc(#{$font-size} * 1.25);
     margin: 0;
   }
 }

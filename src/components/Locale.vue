@@ -1,18 +1,14 @@
 <template>
   <div class="locale">
-    <div class="site-locale">
-      <div class="site-locale-input">
-        <!-- All languages select list -->
-        <el-select v-model="siteLocale">
-          <el-option
-            v-for="(data, locale) in siteLocales"
-            :key="locale"
-            :label="data.lang"
-            :value="locale"
-          ></el-option>
-        </el-select>
-      </div>
-    </div>
+    <!-- All languages select list -->
+    <el-select v-model="siteLocale">
+      <el-option
+        v-for="(data, locale) in siteLocales"
+        :key="locale"
+        :label="data.lang"
+        :value="locale"
+      ></el-option>
+    </el-select>
   </div>
 </template>
 
@@ -47,4 +43,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.el-select {
+  width: 100%;
+}
 </style>

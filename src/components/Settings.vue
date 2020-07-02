@@ -2,7 +2,7 @@
   <div class="settings">
     <div class="system">
       <!-- System label rendered from i18n -->
-      <span class="system-label">{{ $t('systemLabel') }}</span>
+      <el-divider class="system-label" content-position="left">{{ $t('systemLabel') }}</el-divider>
       <div class="system-input">
         <!-- All systems available -->
         <el-select v-model="system">
@@ -12,7 +12,7 @@
     </div>
     <div class="locale">
       <!-- Locale label rendered from i18n -->
-      <span class="locale-label">{{ $t('localeLabel') }}</span>
+      <el-divider class="locale-label" content-position="left">{{ $t('localeLabel') }}</el-divider>
       <div class="locale-input">
         <el-select v-model="systemLocale" :disabled="localeDisabled">
           <el-option
@@ -26,7 +26,7 @@
     </div>
     <div class="timer">
       <!-- Timer label rendered from i18n -->
-      <span class="timer-label">{{ $t('timerLabel') }}</span>
+      <el-divider class="timer-label" content-position="left">{{ $t('timerLabel') }}</el-divider>
       <div class="timer-input">
         <el-slider v-model="timer" show-input :min="1" :max="120"></el-slider>
       </div>
@@ -86,3 +86,20 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.system-label:first-child {
+  margin-top: 0.5rem;
+}
+
+.system,
+.locale {
+  div .el-select {
+    width: 100%;
+  }
+}
+
+.timer .timer-input {
+  margin-left: 0.125rem;
+}
+</style>

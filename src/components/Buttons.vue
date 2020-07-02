@@ -16,4 +16,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.buttons {
+  margin-top: 1rem;
+
+  button {
+    width: 100%;
+  }
+}
 </style>

@@ -8,7 +8,7 @@
       </div>
       <div class="card">
         <div class="card-content">
-          <home-footer></home-footer>
+          <home-about></home-about>
         </div>
       </div>
       <div class="card">
@@ -24,6 +24,11 @@
           <home-buttons></home-buttons>
         </div>
       </div>
+      <div class="card">
+        <div class="card-content">
+          <home-share></home-share>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -32,8 +37,9 @@
 import HomeHeader from '@/components/Header.vue';
 import HomeSettings from '@/components/Settings.vue';
 import HomeButtons from '@/components/Buttons.vue';
-import HomeFooter from '@/components/Footer.vue';
+import HomeAbout from '@/components/About.vue';
 import HomeLocale from '@/components/Locale.vue';
+import HomeShare from '@/components/Share.vue';
 
 export default {
   name: 'Home',
@@ -41,8 +47,9 @@ export default {
     HomeHeader,
     HomeSettings,
     HomeButtons,
-    HomeFooter,
+    HomeAbout,
     HomeLocale,
+    HomeShare,
   },
 };
 </script>
