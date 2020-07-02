@@ -5,8 +5,8 @@ export default [
     component: () => import(/* webpackChunkName: "windows-10" */ '@/systems/windows-10.vue'),
   },
   {
-    path: '/macos-catalina',
-    name: 'macOS Catalina',
-    component: () => import(/* webpackChunkName: "macos-catalina" */ '@/systems/macos-catalina.vue'),
+    path: '/macos',
+    name: 'macOS',
+    component: () => import(/* webpackChunkName: "macos" */ '@/systems/macos.vue'),
   },
 ];

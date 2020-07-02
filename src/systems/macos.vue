@@ -1,5 +1,5 @@
 <template>
-  <div class="macos-catalina">
+  <div class="macos">
     <div class="apple-logo">
       <apple-logo></apple-logo>
     </div>
@@ -15,7 +15,7 @@ import AppleLogo from '@/assets/svgs/AppleLogo.vue';
 import _ from '@/default.js';
 
 export default {
-  name: 'macos-catalina',
+  name: 'macos',
   components: {
     AppleLogo,
   },
@@ -49,7 +49,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.macos-catalina {
+.macos {
   cursor: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7), auto;
   background-color: #000000;
   position: fixed;
