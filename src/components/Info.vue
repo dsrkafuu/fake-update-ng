@@ -6,12 +6,15 @@
       </a>
     </div>
     <div class="btn">
-      <router-link to="/about">
-        <el-button type="primary" plain>{{ $t('about') }}</el-button>
+      <router-link to="/tos">
+        <el-button type="primary" plain>{{ $t('tos') }}</el-button>
       </router-link>
     </div>
     <div class="copy">
-      <span>&copy; 2020 DSRKafuU</span>
+      <span>
+        &copy; 2020
+        <a class="p-info" href="https://twitter.com/amzrk2" target="_blank">DSRKafuU</a>
+      </span>
     </div>
   </div>
 </template>
@@ -31,7 +34,18 @@ export default {
   text-align: center;
 }
 
-button {
-  width: 100%;
+.btn {
+  a {
+    display: block;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+.p-info {
+  color: $color-fuji;
+  text-decoration: none;
 }
 </style>

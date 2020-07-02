@@ -13,9 +13,9 @@ const routes = [
     component: Home,
   },
   {
-    path: '/about',
-    name: 'About',
-    component: () => import(/* webpackChunkName: "about" */ '@/views/About.vue'),
+    path: '/tos',
+    name: 'TOS',
+    component: () => import(/* webpackChunkName: "tos" */ '@/views/TOS.vue'),
   },
   // All system page
   ...systems,
