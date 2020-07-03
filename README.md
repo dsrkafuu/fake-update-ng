@@ -8,6 +8,8 @@ It's basically the same concept as [Fake Update](https://fakeupdate.net/), but h
 
 Note that since this project was created **with the intention of learning Vue**, certain use of tools such as Vuex may be pretty redundant.
 
+Recently working on: Windows 8, Windows 8.1
+
 ## Project home page
 
 [fake-update.amzrk2.cc](https://fake-update.amzrk2.cc/)
