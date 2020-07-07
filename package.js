@@ -10,7 +10,6 @@ export default {
     vuex: '^3.5.1',                        // Vue CLI
   },
   devDependencies: {
-    '@intlify/vue-i18n-loader': '^1.0.0',  // Vue I18n
     '@vue/cli-plugin-babel': '~4.4.6',     // Vue CLI
     '@vue/cli-plugin-eslint': '~4.4.6',    // Vue CLI
     '@vue/cli-plugin-router': '~4.4.6',    // Vue CLI

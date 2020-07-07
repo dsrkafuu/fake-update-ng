@@ -1,6 +1,6 @@
 # Fake Update NG
 
-![](https://img.shields.io/github/workflow/status/amzrk2/fake-update-ng/build?style=flat-square) ![](https://img.shields.io/github/languages/top/amzrk2/fake-update-ng?style=flat-square) ![](https://img.shields.io/github/license/amzrk2/fake-update-ng?style=flat-square)
+![BADGE](https://img.shields.io/github/workflow/status/amzrk2/fake-update-ng/build?style=flat-square) ![BADGE](https://img.shields.io/github/languages/top/amzrk2/fake-update-ng?style=flat-square) ![BADGE](https://img.shields.io/github/license/amzrk2/fake-update-ng?style=flat-square)
 
 Fake Update NG is an experimental open source project built with Vue.js.
 
@@ -66,5 +66,5 @@ This project is released under the `Apache License 2.0`, for more information re
 
 ## Data sources
 
-- Theme design: https://vercel.com/ and https://blog.skk.moe/
-- Apple logo: https://github.com/gilbarbara/logos/blob/master/logos/apple.svg
+- Theme design: <https://vercel.com/> and <https://blog.skk.moe/>
+- Apple logo: <https://github.com/gilbarbara/logos/blob/master/logos/apple.svg>
