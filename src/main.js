@@ -21,13 +21,15 @@ const i18n = new VueI18n({
 import 'normalize.css';
 
 /** Element UI */
-import { Select, Option, Slider, Button, Divider } from 'element-ui';
+import { Select, Option, Slider, Button, Divider, Message } from 'element-ui';
 import './assets/scss/element-variable.scss';
 Vue.use(Select);
 Vue.use(Option);
 Vue.use(Slider);
 Vue.use(Button);
 Vue.use(Divider);
+Vue.component(Message.name, Message);
+Vue.prototype.$message = Message;
 
 /** Project entry */
 import App from './App.vue';
@@ -36,5 +38,5 @@ new Vue({
   i18n,
   router,
   store,
-  render: h => h(App),
+  render: (h) => h(App),
 }).$mount('#app');

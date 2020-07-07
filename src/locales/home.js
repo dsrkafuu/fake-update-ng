@@ -12,6 +12,8 @@ export default {
     gitHub: 'GitHub',
     tos: 'Terms of service',
     backHome: 'Back home',
+    shareSucc: 'Site link copied',
+    shareFail: 'Failed to copy link',
   },
   'zh-hans': {
     lang: '简体中文',
@@ -26,6 +28,8 @@ export default {
     gitHub: 'GitHub',
     tos: '服务条款',
     backHome: '返回主页',
+    shareSucc: '复制连接成功',
+    shareFail: '复制连接失败',
   },
   'zh-hant': {
     lang: '正體字',
@@ -40,5 +44,7 @@ export default {
     gitHub: 'GitHub',
     tos: '服務條款',
     backHome: '返回主頁',
+    shareSucc: '成功複製連結',
+    shareFail: '無法複製連結',
   },
 };

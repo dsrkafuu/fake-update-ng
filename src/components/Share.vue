@@ -1,15 +1,28 @@
 <template>
   <div class="share">
-    <el-divider class="share-label" content-position="left">{{ $t('share') }} (NOT FINISHED YET)</el-divider>
+    <el-divider class="share-label" content-position="left">{{ $t('share') }}</el-divider>
     <div class="list">
-      <el-button type="primary" plain @click="copyLink" size="small">{{ $t('copyLink') }}</el-button>
-      <el-button type="primary" plain @click="twitter" size="small">Twitter</el-button>
-      <el-button type="primary" plain @click="facebook" size="small">Facebook</el-button>
+      <el-button
+        id="copy"
+        type="primary"
+        plain
+        size="small"
+        data-clipboard-action="copy"
+        data-clipboard-text="Fake Update NG https://fakeupdate.cc/"
+      >{{ $t('copyLink') }}</el-button>
+      <a :href="urlTwitter" target="_blank">
+        <el-button type="primary" plain size="small">Twitter</el-button>
+      </a>
+      <a :href="urlFackbook" target="_blank">
+        <el-button type="primary" plain size="small">Facebook</el-button>
+      </a>
     </div>
   </div>
 </template>
 
 <script>
+import ClipboardJS from 'clipboard';
+
 export default {
   name: 'HomeShare',
   data() {
@@ -19,21 +32,24 @@ export default {
     };
   },
   computed: {
-    urlTitle() {
-      return encodeURIComponent(this.title);
+    urlTwitter() {
+      return `https://twitter.com/intent/tweet?text=${encodeURIComponent(this.title)}&url=${encodeURIComponent(
+        this.link
+      )}`;
     },
-    urlLink() {
-      return encodeURIComponent(this.link);
+    urlFackbook() {
+      return `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(this.link)}`;
     },
   },
-  methods: {
-    copyLink() {},
-    twitter() {
-      console.log(`https://twitter.com/intent/tweet?text=${this.urlTitle}&url=${this.urlLink}`);
-    },
-    facebook() {
-      console.log(`https://www.facebook.com/sharer/sharer.php?u=${this.urlLink}`);
-    },
+  mounted() {
+    const cb = new ClipboardJS('#copy');
+    cb.on('success', e => {
+      this.$message(this.$t('shareSucc'));
+      e.clearSelection();
+    });
+    cb.on('error', () => {
+      this.$message(this.$t('shareFail'));
+    });
   },
 };
 </script>
@@ -46,6 +62,17 @@ export default {
 
 .list {
   display: flex;
+
+  a {
+    display: block;
+    flex: 1 1 auto;
+
+    button {
+      width: 100%;
+    }
+
+    margin-left: 1rem;
+  }
 
   button {
     flex: 1 1 auto;
