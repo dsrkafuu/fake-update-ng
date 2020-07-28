@@ -29,6 +29,7 @@ export default {
     return {
       title: 'Fake Update NG',
       link: 'https://fakeupdate.cc/',
+      cb: undefined,
     };
   },
   computed: {
@@ -42,14 +43,17 @@ export default {
     },
   },
   mounted() {
-    const cb = new ClipboardJS('#copy');
-    cb.on('success', e => {
+    this.cb = new ClipboardJS('#copy');
+    this.cb.on('success', (e) => {
       this.$message(this.$t('shareSucc'));
       e.clearSelection();
     });
-    cb.on('error', () => {
+    this.cb.on('error', () => {
       this.$message(this.$t('shareFail'));
     });
+  },
+  destroyed() {
+    this.cb.destroy();
   },
 };
 </script>
