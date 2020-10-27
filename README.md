@@ -1,6 +1,6 @@
 # Fake Update NG
 
-![BADGE](https://img.shields.io/github/workflow/status/amzrk2/fake-update-ng/build?style=flat-square) ![BADGE](https://img.shields.io/github/languages/top/amzrk2/fake-update-ng?style=flat-square) ![BADGE](https://img.shields.io/github/license/amzrk2/fake-update-ng?style=flat-square)
+![BADGE](https://img.shields.io/github/workflow/status/amzrk2/fake-update-ng/deploy?style=flat-square) ![BADGE](https://img.shields.io/github/languages/top/amzrk2/fake-update-ng?style=flat-square) ![BADGE](https://img.shields.io/github/license/amzrk2/fake-update-ng?style=flat-square)
 
 Fake Update NG is an experimental open source project built with Vue.js.
 
@@ -12,7 +12,7 @@ Recently working on: Windows 8, Windows 8.1
 
 ## Project home page
 
-[fake-update.amzrk2.cc](https://fake-update.amzrk2.cc/)
+[GitHub Pages](https://github.amzrk2.cc/fake-update-ng/)
 
 ## Screenshots
 
