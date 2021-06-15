@@ -1,6 +1,6 @@
 # Fake Update NG
 
-![BADGE](https://img.shields.io/github/workflow/status/amzrk2/fake-update-ng/deploy?style=flat-square) ![BADGE](https://img.shields.io/github/languages/top/amzrk2/fake-update-ng?style=flat-square) ![BADGE](https://img.shields.io/github/license/amzrk2/fake-update-ng?style=flat-square)
+![BADGE](https://img.shields.io/github/workflow/status/dsrkafuu/fake-update-ng/deploy?style=flat-square) ![BADGE](https://img.shields.io/github/languages/top/dsrkafuu/fake-update-ng?style=flat-square) ![BADGE](https://img.shields.io/github/license/dsrkafuu/fake-update-ng?style=flat-square)
 
 Fake Update NG is an experimental open source project built with Vue.js.
 
@@ -12,7 +12,7 @@ Recently working on: Windows 8, Windows 8.1
 
 ## Project home page
 
-[GitHub Pages](https://github.amzrk2.cc/fake-update-ng/)
+[GitHub Pages](https://github.dsrkafuu.su/fake-update-ng/)
 
 ## Screenshots
 
@@ -60,9 +60,9 @@ All system page designs and graphics are from the Internet.
 
 This project and all contributors shall not be responsible for any dispute or loss caused by using this project.
 
-This project is released under the `Apache License 2.0`, for more information read the [License](https://github.com/amzrk2/hugo-theme-fuji/blob/master/LICENSE).
+This project is released under the `Apache License 2.0`, for more information read the [License](https://github.com/dsrkafuu/hugo-theme-fuji/blob/master/LICENSE).
 
-> © 2020 DSRKafuU(amzrk2) [Twitter @amzrk2](https://twitter.com/amzrk2) [GitHub @amzrk2](https://github.com/amzrk2)
+> © 2020 DSRKafuU(dsrkafuu) [Twitter @dsrkafuu](https://twitter.com/dsrkafuu) [GitHub @dsrkafuu](https://github.com/dsrkafuu)
 
 ## Data sources
 
